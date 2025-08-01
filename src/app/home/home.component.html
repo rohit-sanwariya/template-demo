@@ -4,11 +4,11 @@
     <th table-header>Name</th>
     <th table-header>Description</th>
     <th table-header>City</th>
- 
-  <tr *appItemDef="let user; data: users">
+
+  <tr *appItemDef="let user; data: items">
     <td>{{ user.name }}</td>
     <td>{{ user.description }}</td>
-    <td>{{ user.city }}</td>
+    <td>{{ user.id }}</td>
   </tr>
 </app-parent-table>
 
