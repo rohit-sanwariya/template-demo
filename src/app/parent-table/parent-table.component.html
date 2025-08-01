@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <ng-content select="[table-header]"/>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of data; track $index) {
+      <tr>
+        <ng-container *ngTemplateOutlet="template(); context: { $implicit: item }"></ng-container>
+      </tr>
+    }
+  </tbody>
+</table>
